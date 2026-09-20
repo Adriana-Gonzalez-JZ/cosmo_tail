@@ -1,0 +1,1486 @@
+/* =========================================
+   STAILS COSMO - ESTILOS GENERALES
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background: #f6f4f7;
+    color: #27232c;
+    overflow-x: hidden;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+img {
+    display: block;
+    width: 100%;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    width: 100%;
+    padding: 22px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #f6f4f7;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+}
+
+
+.logo {
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+.logo span {
+    color: #c01fd6;
+    font-style: italic;
+}
+
+
+.nav {
+    display: flex;
+    gap: 32px;
+}
+
+
+.nav a {
+    font-size: 14px;
+    color: #5d5862;
+
+    transition: 0.3s;
+}
+
+
+.nav a:hover {
+    color: #c01fd6;
+}
+
+
+.btn-contacto {
+    background: #2c2730;
+    color: white;
+
+    padding: 12px 22px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.btn-contacto:hover {
+    background: #c01fd6;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    min-height: 680px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    padding: 70px 7%;
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+
+.hero-content {
+    max-width: 600px;
+}
+
+
+.eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #c01fd6;
+
+    margin-bottom: 22px;
+}
+
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(55px, 6vw, 88px);
+
+    font-weight: 500;
+
+    line-height: 0.95;
+
+    margin-bottom: 28px;
+}
+
+
+.hero h1 em {
+    color: #c01fd6;
+}
+
+
+.hero-description {
+    max-width: 500px;
+
+    color: #6b6570;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 32px;
+}
+
+
+.hero-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    background: #c01fd6;
+
+    color: white;
+
+    padding: 15px 20px 15px 25px;
+
+    border-radius: 50px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.hero-button span {
+    font-size: 19px;
+}
+
+
+.hero-button:hover {
+    background: #2c2730;
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   IMAGEN HERO
+========================================= */
+
+.hero-image {
+    position: relative;
+
+    height: 550px;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+}
+
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.rating {
+    position: absolute;
+
+    bottom: 25px;
+    left: 25px;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    backdrop-filter: blur(10px);
+
+    border-radius: 20px;
+
+    padding: 16px 22px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+.rating strong {
+    font-size: 24px;
+}
+
+
+.rating span {
+    color: #7a737e;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   PRODUCTOS
+========================================= */
+
+.products {
+    padding: 100px 7%;
+}
+
+
+.section-title {
+    margin-bottom: 55px;
+}
+
+
+.section-title h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(45px, 5vw, 70px);
+
+    font-weight: 500;
+
+    line-height: 1.05;
+}
+
+
+.section-title h2 em {
+    color: #c01fd6;
+}
+
+
+/* =========================================
+   GRID DE PRODUCTOS
+========================================= */
+
+.product-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+/* =========================================
+   TARJETAS
+========================================= */
+
+.product-card {
+    background: white;
+
+    position: relative;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    min-height: 470px;
+
+    transition: 0.4s;
+
+    border-bottom: 3px solid transparent;
+}
+
+
+.product-card:hover {
+    transform: translateY(-8px);
+
+    border-bottom-color: #c01fd6;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   IMAGEN DE TARJETA
+========================================= */
+
+.product-image {
+    height: 350px;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+.product-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.18),
+        transparent 55%
+    );
+}
+
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+
+.product-card:hover .product-image img {
+    transform: scale(1.06);
+}
+
+
+/* =========================================
+   INFORMACIÓN DE TARJETA
+========================================= */
+
+.product-info {
+    padding: 24px;
+}
+
+
+.product-info > span {
+    color: #c01fd6;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.product-info h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 32px;
+
+    font-weight: 500;
+
+    margin: 8px 0;
+}
+
+
+.product-info p {
+    color: #716a75;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    min-height: 42px;
+
+    margin-bottom: 14px;
+}
+
+
+.product-info a {
+    color: #c01fd6;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+.product-info a:hover {
+    color: #2c2730;
+}
+
+
+/* =========================================
+   MENÚ OCULTO DE MASCOTAS
+========================================= */
+
+.menu-mascota {
+    position: absolute;
+
+    inset: 0;
+
+    padding: 24px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(35, 30, 40, 0.96),
+            rgba(18, 15, 22, 0.97)
+        );
+
+    backdrop-filter: blur(8px);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    z-index: 20;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateX(-100%);
+
+    transition:
+        opacity 0.35s ease,
+        transform 0.45s ease,
+        visibility 0.35s ease;
+}
+
+
+/* CUANDO LA TARJETA ESTÁ ABIERTA */
+
+.product-card.abierto .menu-mascota {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateX(0);
+}
+
+
+/* =========================================
+   BOTÓN CERRAR
+========================================= */
+
+.cerrar-menu {
+    position: absolute;
+
+    top: 18px;
+    right: 18px;
+
+    border: none;
+
+    background: #c01fd6;
+
+    color: white;
+
+    padding: 8px 13px;
+
+    border-radius: 20px;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.cerrar-menu:hover {
+    background: white;
+
+    color: #c01fd6;
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================
+   TÍTULO DEL MENÚ
+========================================= */
+
+.menu-mascota h4 {
+    font-family: "Playfair Display", serif;
+
+    color: white;
+
+    font-size: 32px;
+
+    font-weight: 500;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   OPCIONES DEL MENÚ
+========================================= */
+
+.menu-opcion {
+    width: 100%;
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    background: rgba(255, 255, 255, 0.07);
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    transition: 0.3s;
+}
+
+
+.menu-opcion:hover {
+    background: rgba(192, 31, 214, 0.25);
+
+    border-color: #c01fd6;
+
+    transform: translateX(5px);
+}
+
+
+/* =========================================
+   ICONOS
+========================================= */
+
+.menu-opcion-icono {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(192, 31, 214, 0.2);
+
+    font-size: 20px;
+}
+
+
+/* =========================================
+   TEXTO DEL MENÚ
+========================================= */
+
+.menu-opcion-texto {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.menu-opcion-texto strong {
+    color: white;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 18px;
+
+    font-weight: 500;
+}
+
+
+.menu-opcion-texto span {
+    color: rgba(255, 255, 255, 0.65);
+
+    font-size: 10px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   FLECHA
+========================================= */
+
+.menu-flecha {
+    margin-left: auto;
+
+    color: #c01fd6;
+
+    font-size: 21px;
+}
+
+
+/* =========================================
+   PRODUCTOS PERSONALIZADOS
+========================================= */
+
+.productos-personalizados {
+    margin-top: 45px;
+
+    text-align: center;
+}
+
+
+.productos-personalizados a {
+    display: inline-block;
+
+    padding: 15px 28px;
+
+    border: 1px solid #c01fd6;
+
+    border-radius: 30px;
+
+    color: #c01fd6;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+
+.productos-personalizados a:hover {
+    background: #c01fd6;
+
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   SERVICIOS
+========================================= */
+
+.services {
+    min-height: 600px;
+
+    padding: 100px 7%;
+
+    background: #2c2730;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+.services-content {
+    max-width: 800px;
+}
+
+
+.services .eyebrow {
+    color: #d760e8;
+}
+
+
+.services h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(45px, 5vw, 72px);
+
+    font-weight: 500;
+
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+
+.services h2 em {
+    color: #d760e8;
+}
+
+
+.services-content > p:not(.eyebrow) {
+    max-width: 600px;
+
+    color: rgba(255, 255, 255, 0.7);
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+
+.dark-button {
+    display: inline-block;
+
+    padding: 15px 26px;
+
+    background: #c01fd6;
+
+    color: white;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+
+.dark-button:hover {
+    background: white;
+
+    color: #2c2730;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   NOSOTROS
+========================================= */
+
+.about {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    min-height: 650px;
+
+    align-items: center;
+
+    gap: 80px;
+
+    padding: 100px 7%;
+}
+
+
+.about-image {
+    height: 500px;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+}
+
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.about-content h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(42px, 5vw, 65px);
+
+    font-weight: 500;
+
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+
+.about-content h2 em {
+    color: #c01fd6;
+}
+
+
+.about-content > p:not(.eyebrow) {
+    color: #716a75;
+
+    line-height: 1.8;
+
+    margin-bottom: 28px;
+}
+
+
+.text-button {
+    color: #c01fd6;
+
+    font-weight: 700;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+.text-button:hover {
+    color: #2c2730;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   CONTACTO
+========================================= */
+
+.contact {
+    text-align: center;
+
+    padding: 120px 7%;
+
+    background: #eeeaf0;
+}
+
+
+.contact h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(55px, 7vw, 90px);
+
+    font-weight: 500;
+
+    margin-bottom: 20px;
+}
+
+
+.contact > p:not(.eyebrow) {
+    color: #716a75;
+
+    max-width: 500px;
+
+    margin: 0 auto 30px;
+
+    line-height: 1.7;
+}
+
+
+.contact-button {
+    display: inline-block;
+
+    background: #2c2730;
+
+    color: white;
+
+    padding: 17px 28px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+
+.contact-button:hover {
+    background: #c01fd6;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background: #201c24;
+
+    color: white;
+
+    padding: 35px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.footer-logo {
+    font-family: "Playfair Display", serif;
+
+    font-size: 23px;
+
+    font-weight: 600;
+}
+
+
+.footer-logo span {
+    color: #c01fd6;
+
+    font-style: italic;
+}
+
+
+footer p {
+    color: rgba(255, 255, 255, 0.55);
+
+    font-size: 11px;
+}
+
+
+.social {
+    color: #d760e8;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .nav {
+        gap: 18px;
+    }
+
+
+    .hero {
+        gap: 40px;
+    }
+
+
+    .about {
+        gap: 45px;
+    }
+
+}
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width: 750px) {
+
+    /* HEADER */
+
+    .header {
+        padding: 18px 6%;
+    }
+
+
+    .nav {
+        display: none;
+    }
+
+
+    .btn-contacto {
+        padding: 10px 16px;
+
+        font-size: 11px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        grid-template-columns: 1fr;
+
+        padding: 60px 7%;
+
+        gap: 45px;
+    }
+
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
+
+    .hero-image {
+        height: 420px;
+    }
+
+
+    /* PRODUCTOS */
+
+    .products {
+        padding: 80px 7%;
+    }
+
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .product-card {
+        min-height: 470px;
+    }
+
+
+    /* MENÚ */
+
+    .menu-mascota {
+        padding: 20px;
+    }
+
+
+    .menu-opcion {
+        padding: 13px;
+    }
+
+
+    .menu-mascota h4 {
+        font-size: 28px;
+    }
+
+
+    /* ABOUT */
+
+    .about {
+        grid-template-columns: 1fr;
+
+        padding: 80px 7%;
+    }
+
+
+    .about-image {
+        height: 400px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        flex-direction: column;
+
+        gap: 15px;
+
+        text-align: center;
+    }
+
+}
+/* =========================================
+   PRODUCTOS PERSONALIZADOS FUNCIONAL
+========================================= */
+
+.productos-personalizados {
+    position: relative;
+    margin-top: 45px;
+    text-align: center;
+}
+
+
+/* BOTÓN PRINCIPAL */
+
+.btn-productos-personalizados {
+    border: 1px solid #c01fd6;
+
+    background: transparent;
+
+    color: #c01fd6;
+
+    padding: 15px 28px;
+
+    border-radius: 30px;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.btn-productos-personalizados:hover {
+    background: #c01fd6;
+
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+
+/* PANEL OCULTO */
+
+.menu-personalizados {
+    width: min(450px, 100%);
+
+    margin: 20px auto 0;
+
+    padding: 50px 35px 35px;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(35, 30, 40, 0.98),
+            rgba(18, 15, 22, 0.98)
+        );
+
+    border-radius: 25px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(-20px);
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    transition:
+        opacity 0.4s ease,
+        transform 0.4s ease,
+        max-height 0.4s ease,
+        visibility 0.4s ease;
+}
+
+
+/* CUANDO SE ABRE */
+
+.productos-personalizados.abierto-personalizados
+.menu-personalizados {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+
+    max-height: 350px;
+}
+
+
+/* BOTÓN CERRAR */
+
+.cerrar-personalizados {
+    position: absolute;
+
+    top: 15px;
+
+    right: 18px;
+
+    border: none;
+
+    background: #c01fd6;
+
+    color: white;
+
+    padding: 8px 13px;
+
+    border-radius: 20px;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.cerrar-personalizados:hover {
+    background: white;
+
+    color: #c01fd6;
+
+    transform: scale(1.05);
+}
+
+
+/* TÍTULO */
+
+.menu-personalizados h4 {
+    color: white;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 32px;
+
+    font-weight: 500;
+
+    margin-bottom: 15px;
+}
+
+
+/* MENSAJE */
+
+.menu-personalizados p {
+    color: rgba(255, 255, 255, 0.7);
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+/* INSTAGRAM */
+
+.instagram-personalizados {
+    display: inline-block;
+
+    background: #c01fd6;
+
+    color: white;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+
+.instagram-personalizados:hover {
+    background: white;
+
+    color: #2c2730;
+
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   GALERÍAS DE PRODUCTOS POR CATEGORÍA
+   AGREGADO - NO MODIFICA EL CSS ORIGINAL
+========================================= */
+
+.categorias-productos-extra {
+    width: 100%;
+    margin-top: 55px;
+}
+
+.apartado-productos {
+    display: none;
+    position: relative;
+    padding: 45px;
+    margin-bottom: 35px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+    animation: aparecerCategoria 0.4s ease;
+}
+
+.apartado-productos.mostrar {
+    display: block;
+}
+
+.apartado-productos h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    font-weight: 500;
+    margin: 5px 0 35px;
+    color: #27232c;
+}
+
+.cerrar-apartado {
+    border: 1px solid #c01fd6;
+    background: transparent;
+    color: #c01fd6;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cerrar-apartado:hover {
+    background: #c01fd6;
+    color: white;
+    transform: translateX(-3px);
+}
+
+.galeria-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.tarjeta-imagen {
+    height: 280px;
+    overflow: hidden;
+    border-radius: 18px;
+    background: #eeeaf0;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.tarjeta-imagen:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.tarjeta-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.tarjeta-imagen:hover img {
+    transform: scale(1.06);
+}
+
+@keyframes aparecerCategoria {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1050px) {
+    .galeria-productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 750px) {
+    .apartado-productos {
+        padding: 25px 20px;
+    }
+
+    .apartado-productos h3 {
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+
+    .galeria-productos {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjeta-imagen {
+        height: 300px;
+    }
+}
+/* =========================
+   HISTORIA
+========================= */
+
+.historia-apartado {
+    display: none;
+    width: 90%;
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 60px;
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.historia-apartado.mostrar {
+    display: block;
+}
+
+.cerrar-historia {
+    border: none;
+    background: none;
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.historia-apartado h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 55px;
+    margin-bottom: 45px;
+}
+
+.historia-apartado h2 em {
+    font-weight: 400;
+}
+
+.historia-contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.historia-imagen img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.historia-texto h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.historia-texto p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stails Cosmo | Pet Shop</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,500;1,600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+
+    <header class="header">
+
+        <a href="#inicio" class="logo">
+            Stails<span>Cosmo</span>
+        </a>
+
+
+        <nav class="nav">
+
+            <a href="#productos">Productos</a>
+
+            <a href="#servicios">Servicios</a>
+
+            <a href="#nosotros">Nosotros</a>
+
+            <a href="#contacto">Contacto</a>
+
+        </nav>
+
+
+        <a href="#contacto" class="btn-contacto">
+            Contactar
+        </a>
+
+    </header>
+
+
+
+    <!-- =========================
+         CONTENIDO PRINCIPAL
+    ========================= -->
+
+    <main>
+
+
+        <!-- =========================
+             HERO
+        ========================= -->
+
+        <section class="hero" id="inicio">
+
+
+            <!-- TEXTO -->
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    BIENVENIDO — STAILS COSMO
+                </p>
+
+
+                <h1>
+                    Todo para
+                    <br>
+
+                    <em>tu mejor</em>
+                    <br>
+
+                    amigo
+                </h1>
+
+
+                <p class="hero-description">
+
+                    Encuentra productos, accesorios y asesoría
+                    especializada para consentir a tus mascotas
+                    con la calidad que merecen.
+
+                </p>
+
+
+                <a href="#productos" class="hero-button">
+
+                    Explorar categorías
+
+                    <span>↗</span>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- IMAGEN PRINCIPAL -->
+
+            <div class="hero-image">
+
+                <img
+                    src="Nueva carpeta/WhatsApp Image 2026-08-14 at 11.06.29.jpeg"
+                    alt="Mascota Stails Cosmo"
+                >
+
+
+                <!-- VALORACIÓN -->
+
+                <div class="rating">
+
+                    <strong>4.9</strong>
+
+                    <span>VALORACIÓN</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             PRODUCTOS
+        ========================= -->
+
+        <section class="products" id="productos">
+
+
+            <!-- TÍTULO -->
+
+            <div class="section-title">
+
+                <p class="eyebrow">
+                    NUESTRA COLECCIÓN
+                </p>
+
+
+                <h2>
+                    Todo lo que
+                    <br>
+
+                    <em>ellos necesitan.</em>
+                </h2>
+
+            </div>
+
+
+
+            <!-- =========================
+                 TARJETAS DE MASCOTAS
+            ========================= -->
+
+            <div class="product-grid">
+
+
+                <!-- =========================
+                     PERROS
+                ========================= -->
+
+                <article class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                            src="Nueva carpeta/WhatsApp Image 2026-08-14 at 11.06.29 (5).jpeg"
+                            alt="Productos para perros"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>01</span>
+
+                        <h3>Perros</h3>
+
+                        <p>
+                            Alimentos, juguetes, camas y accesorios.
+                        </p>
+
+                        <a href="#">
+                            Descubrir ↗
+                        </a>
+
+                    </div>
+
+
+                    <!-- MENÚ OCULTO -->
+
+                    <div class="menu-mascota">
+
+
+                        <button class="cerrar-menu">
+                            Cerrar ×
+                        </button>
+
+
+                        <h4>
+                            Perros
+                        </h4>
+
+
+                        <!-- COMIDA -->
+
+                        <div class="menu-opcion" onclick="mostrarCategoria('perros-comida')">
+
+                            <div class="menu-opcion-icono">
+                                🍖
+                            </div>
+
+
+                            <div class="menu-opcion-texto">
+
+                                <strong>
+                                    Comida
+                                </strong>
+
+                                <span>
+                                    Alimentos y premios
+                                </span>
+
+                            </div>
+
+
+                            <span class="menu-flecha">
+                                <div class="menu-opcion" onclick="mostrarCategoria('perros-comida')"></div>
+                                →
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- JUGUETES -->
+
+                        <div class="menu-opcion" onclick="mostrarCategoria('perros-juguetes')">
+
+                            <div class="menu-opcion-icono">
+                                🧸
+                            </div>
+
+
+                            <div class="menu-opcion-texto">
+
+                                <strong>
+                                    Juguetes
+                                </strong>
+
+                                <span>
+                                    Para jugar y divertirse
+                                </span>
+
+                            </div>
+
+
+                            <span class="menu-flecha">
+                                →
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- ACCESORIOS -->
+
+                        <div class="menu-opcion" onclick="mostrarCategoria('perros-accesorios')">
+
+                            <div class="menu-opcion-icono">
+                                🦴
+                            </div>
+
+
+                            <div class="menu-opcion-texto">
+
+                                <strong>
+                                    Accesorios
+                                </strong>
+
+                                <span>
+                                    Todo para su cuidado
+                                </span>
+
+                            </div>
+
+
+                            <span class="menu-flecha">
+                                →
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =========================
+                     GATOS
+                ========================= -->
+
+                <article class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                            src="Nueva carpeta/WhatsApp Image 2026-08-14 at 11.06.29 (4).jpeg"
+                            alt="Productos para gatos"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>02</span>
+
+                        <h3>Gatos</h3>
+
+                        <p>
+                            Todo para que tu gato juegue y descanse.
+                        </p>
+
+                        <a href="#">
+                            Descubrir ↗
+                        </a>
+
+                    </div>
+
+
+                    <!-- MENÚ OCULTO -->
+
+                    <div class="menu-mascota">
+
+
+                        <button class="cerrar-menu">
+                            Cerrar ×
+                        </button>
+
+
+                        <h4>
+                            Gatos
+                        </h4>
+
+
+                        <!-- COMIDA -->
+
+                        <div class="menu-opcion" onclick="mostrarCategoria('gatos-comida')">
+
+                            <div class="menu-opcion-icono">
+                                🍖
+                            </div>
+
+
+                            <div class="menu-opcion-texto">
+
+                                <strong>
+                                    Comida
+                                </strong>
+
+                                <span>
+                                    Alimentos y premios
+                                </span>
+
+                            </div>
+
+
+                            <span class="menu-flecha">
+                                →
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- JUGUETES -->
+
+                        <div class="menu-opcion" onclick="mostrarCategoria('gatos-juguetes')">
+
+                            <div class="menu-opcion-icono">
+                                🧶
+                            </div>
+
+
+                            <div class="menu-opcion-texto">
+
+                                <strong>
+                                    Juguetes
+                                </strong>
+
+                                <span>
+                                    Para jugar y divertirse
+                                </span>
+
+                            </div>
+
+
+                            <span class="menu-flecha">
+                                →
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- ACCESORIOS -->
+
+                        <div class="menu-opcion" onclick="mostrarCategoria('gatos-accesorios')">
+
+                            <div class="menu-opcion-icono">
+                                🐾
+                            </div>
+
+
+                            <div class="menu-opcion-texto">
+
+                                <strong>
+                                    Accesorios
+                                </strong>
+
+                                <span>
+                                    Todo para su cuidado
+                                </span>
+
+                            </div>
+
+
+                            <span class="menu-flecha">
+                                →
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =========================
+                     CONEJOS
+                ========================= -->
+
+                <article class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                            src="Nueva carpeta/hmaster.jpg"
+                            alt="Productos para conejos"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>03</span>
+
+                        <h3>Hamsters</h3>
+
+                        <p>
+                            Accesorios y productos para su cuidado.
+                        </p>
+
+                        <a href="#">
+                            Descubrir ↗
+                        </a>
+
+                    </div>
+
+
+                    <!-- MENÚ OCULTO -->
+
+                    <div class="menu-mascota">
+
+
+                        <button class="cerrar-menu">
+                            Cerrar ×
+                        </button>
+
+
+                        <h4>
+                            Conejos
+                        </h4>
+
+
+                        <!-- COMIDA -->
+
+                        <div class="menu-opcion" onclick="mostrarCategoria('conejos-comida')">
+
+                            <div class="menu-opcion-icono">
+                                🥕
+                            </div>
+
+
+                            <div class="menu-opcion-texto">
+
+                                <strong>
+                                    Comida
+                                </strong>
+
+                                <span>
+                                    Alimentos y premios
+                                </span>
+
+                            </div>
+
+
+                            <span class="menu-flecha">
+                                →
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- JUGUETES -->
+
+                        <div class="menu-opcion" onclick="mostrarCategoria('conejos-juguetes')">
+
+                            <div class="menu-opcion-icono">
+                                🧸
+                            </div>
+
+
+                            <div class="menu-opcion-texto">
+
+                                <strong>
+                                    Juguetes
+                                </strong>
+
+                                <span>
+                                    Para jugar y divertirse
+                                </span>
+
+                            </div>
+
+
+                            <span class="menu-flecha">
+                                →
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- ACCESORIOS -->
+
+                        <div class="menu-opcion" onclick="mostrarCategoria('conejos-accesorios')">
+
+                            <div class="menu-opcion-icono">
+                                🏠
+                            </div>
+
+
+                            <div class="menu-opcion-texto">
+
+                                <strong>
+                                    Accesorios
+                                </strong>
+
+                                <span>
+                                    Todo para su cuidado
+                                </span>
+
+                            </div>
+
+
+                            <span class="menu-flecha">
+                                →
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =========================
+                     PERIQUITOS
+                ========================= -->
+
+                <article class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                            src="Nueva carpeta/WhatsApp Image 2026-08-14 at 11.06.29 (1).jpeg"
+                            alt="Productos para periquitos"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <span>04</span>
+
+                        <h3>Periquitos</h3>
+
+                        <p>
+                            Alimentos, jaulas y accesorios.
+                        </p>
+
+                        <a href="#">
+                            Descubrir ↗
+                        </a>
+
+                    </div>
+
+
+                    <!-- MENÚ OCULTO -->
+
+                    <div class="menu-mascota">
+
+
+                        <button class="cerrar-menu">
+                            Cerrar ×
+                        </button>
+
+
+                        <h4>
+                            Periquitos
+                        </h4>
+
+
+                        <!-- COMIDA -->
+
+                        <div class="menu-opcion" onclick="mostrarCategoria('periquitos-comida')">
+
+                            <div class="menu-opcion-icono">
+                                🌾
+                            </div>
+
+
+                            <div class="menu-opcion-texto">
+
+                                <strong>
+                                    Comida
+                                </strong>
+
+                                <span>
+                                    Semillas y alimentos
+                                </span>
+
+                            </div>
+
+
+                            <span class="menu-flecha">
+                                →
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- JUGUETES -->
+
+                        <div class="menu-opcion" onclick="mostrarCategoria('periquitos-juguetes')">
+
+                            <div class="menu-opcion-icono">
+                                🎠
+                            </div>
+
+
+                            <div class="menu-opcion-texto">
+
+                                <strong>
+                                    Juguetes
+                                </strong>
+
+                                <span>
+                                    Para jugar y entretenerse
+                                </span>
+
+                            </div>
+
+
+                            <span class="menu-flecha">
+                                →
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- ACCESORIOS -->
+
+                        <div class="menu-opcion" onclick="mostrarCategoria('periquitos-accesorios')">
+
+                            <div class="menu-opcion-icono">
+                                🪶
+                            </div>
+
+
+                            <div class="menu-opcion-texto">
+
+                                <strong>
+                                    Accesorios
+                                </strong>
+
+                                <span>
+                                    Todo para su cuidado
+                                </span>
+
+                            </div>
+
+
+                            <span class="menu-flecha">
+                                →
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+
+
+            <!-- PRODUCTOS PERSONALIZADOS -->
+<!-- PRODUCTOS PERSONALIZADOS -->
+
+<div class="productos-personalizados">
+
+    <!-- BOTÓN PRINCIPAL -->
+
+    <button class="btn-productos-personalizados">
+
+        Productos Personalizados ↗
+
+    </button>
+
+
+    <!-- PANEL OCULTO -->
+
+    <div class="menu-personalizados">
+
+        <button class="cerrar-personalizados">
+
+            Cerrar ×
+
+        </button>
+
+
+        <h4>
+            Productos Personalizados
+        </h4>
+
+
+        <p>
+            Contáctanos para productos personalizados
+        </p>
+
+
+        <a
+            href="https://www.instagram.com/cosmotails.ds/
+            target="_blank"
+            class="instagram-personalizados"
+        >
+
+            Instagram ↗
+
+        </a>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================================
+     APARTADOS DE PRODUCTOS POR CATEGORÍA
+     AGREGADO - NO MODIFICA EL CÓDIGO ORIGINAL
+========================================= -->
+
+<div class="categorias-productos-extra">
+
+    <!-- =========================
+         PERROS
+    ========================= -->
+    <div class="apartado-productos" id="perros-comida">
+        <button class="cerrar-apartado" onclick="cerrarCategoria('perros-comida')">← Volver</button>
+        <h3>Comida para perros</h3>
+        <div class="galeria-productos">
+            <div class="tarjeta-imagen"><img src="Nueva carpeta/bolsa de comida de perros (1).jpg" alt="Comida para perros 1"></div>
+            <div class="tarjeta-imagen"><img src="Nueva carpeta/barra nutritiva morada.jpg" alt="Comida para perros 2"></div>
+            <div class="tarjeta-imagen"><img src="Nueva carpeta/caja de comida para perross.jpg.jpeg" alt="Comida para perros 3"></div>
+            <div class="tarjeta-imagen"><img src="img/perros-comida-4.jpeg" alt="Comida para perros 4"></div>
+            <div class="tarjeta-imagen"><img src="img/perros-comida-5.jpeg" alt="Comida para perros 5"></div>
+            <div class="tarjeta-imagen"><img src="img/perros-comida-6.jpeg" alt="Comida para perros 6"></div>
+        </div>
+    </div>
+
+    <div class="apartado-productos" id="perros-juguetes">
+        <button class="cerrar-apartado" onclick="cerrarCategoria('perros-juguetes')">← Volver</button>
+        <h3>Juguetes para perros</h3>
+        <div class="galeria-productos">
+            <div class="tarjeta-imagen"><img src="img/perros-juguetes-1.jpeg" alt="Juguete para perros 1"></div>
+            <div class="tarjeta-imagen"><img src="img/perros-juguetes-2.jpeg" alt="Juguete para perros 2"></div>
+            <div class="tarjeta-imagen"><img src="img/perros-juguetes-3.jpeg" alt="Juguete para perros 3"></div>
+            <div class="tarjeta-imagen"><img src="img/perros-juguetes-4.jpeg" alt="Juguete para perros 4"></div>
+            <div class="tarjeta-imagen"><img src="img/perros-juguetes-5.jpeg" alt="Juguete para perros 5"></div>
+            <div class="tarjeta-imagen"><img src="img/perros-juguetes-6.jpeg" alt="Juguete para perros 6"></div>
+        </div>
+    </div>
+
+    <div class="apartado-productos" id="perros-accesorios">
+        <button class="cerrar-apartado" onclick="cerrarCategoria('perros-accesorios')">← Volver</button>
+        <h3>Accesorios para perros</h3>
+        <div class="galeria-productos">
+            <div class="tarjeta-imagen"><img src="Nueva carpeta/correa.jpg" alt="Accesorio para perros 1"></div>
+            <div class="tarjeta-imagen"><img src="img/perros-accesorios-2.jpeg" alt="Accesorio para perros 2"></div>
+            <div class="tarjeta-imagen"><img src="img/perros-accesorios-3.jpeg" alt="Accesorio para perros 3"></div>
+            <div class="tarjeta-imagen"><img src="img/perros-accesorios-4.jpeg" alt="Accesorio para perros 4"></div>
+            <div class="tarjeta-imagen"><img src="img/perros-accesorios-5.jpeg" alt="Accesorio para perros 5"></div>
+            <div class="tarjeta-imagen"><img src="img/perros-accesorios-6.jpeg" alt="Accesorio para perros 6"></div>
+        </div>
+    </div>
+
+    <!-- =========================
+         GATOS
+    ========================= -->
+    <div class="apartado-productos" id="gatos-comida">
+        <button class="cerrar-apartado" onclick="cerrarCategoria('gatos-comida')">← Volver</button>
+        <h3>Comida para gatos</h3>
+        <div class="galeria-productos">
+            <div class="tarjeta-imagen"><img src="img/gatos-comida-1.jpeg" alt="Comida para gatos 1"></div>
+            <div class="tarjeta-imagen"><img src="img/gatos-comida-2.jpeg" alt="Comida para gatos 2"></div>
+            <div class="tarjeta-imagen"><img src="img/gatos-comida-3.jpeg" alt="Comida para gatos 3"></div>
+            <div class="tarjeta-imagen"><img src="img/gatos-comida-4.jpeg" alt="Comida para gatos 4"></div>
+            <div class="tarjeta-imagen"><img src="img/gatos-comida-5.jpeg" alt="Comida para gatos 5"></div>
+            <div class="tarjeta-imagen"><img src="img/gatos-comida-6.jpeg" alt="Comida para gatos 6"></div>
+        </div>
+    </div>
+
+    <div class="apartado-productos" id="gatos-juguetes">
+        <button class="cerrar-apartado" onclick="cerrarCategoria('gatos-juguetes')">← Volver</button>
+        <h3>Juguetes para gatos</h3>
+        <div class="galeria-productos">
+            <div class="tarjeta-imagen"><img src="img/gatos-juguetes-1.jpeg" alt="Juguete para gatos 1"></div>
+            <div class="tarjeta-imagen"><img src="img/gatos-juguetes-2.jpeg" alt="Juguete para gatos 2"></div>
+            <div class="tarjeta-imagen"><img src="img/gatos-juguetes-3.jpeg" alt="Juguete para gatos 3"></div>
+            <div class="tarjeta-imagen"><img src="img/gatos-juguetes-4.jpeg" alt="Juguete para gatos 4"></div>
+            <div class="tarjeta-imagen"><img src="img/gatos-juguetes-5.jpeg" alt="Juguete para gatos 5"></div>
+            <div class="tarjeta-imagen"><img src="img/gatos-juguetes-6.jpeg" alt="Juguete para gatos 6"></div>
+        </div>
+    </div>
+
+    <div class="apartado-productos" id="gatos-accesorios">
+        <button class="cerrar-apartado" onclick="cerrarCategoria('gatos-accesorios')">← Volver</button>
+        <h3>Accesorios para gatos</h3>
+        <div class="galeria-productos">
+            <div class="tarjeta-imagen"><img src="Nueva carpeta/LOS PIXELES 4K.jpg" alt="Accesorio para gatos 1"></div>
+            <div class="tarjeta-imagen"><img src="img/gatos-accesorios-2.jpeg" alt="Accesorio para gatos 2"></div>
+            <div class="tarjeta-imagen"><img src="img/gatos-accesorios-3.jpeg" alt="Accesorio para gatos 3"></div>
+            <div class="tarjeta-imagen"><img src="img/gatos-accesorios-4.jpeg" alt="Accesorio para gatos 4"></div>
+            <div class="tarjeta-imagen"><img src="img/gatos-accesorios-5.jpeg" alt="Accesorio para gatos 5"></div>
+            <div class="tarjeta-imagen"><img src="img/gatos-accesorios-6.jpeg" alt="Accesorio para gatos 6"></div>
+        </div>
+    </div>
+
+    <!-- =========================
+         CONEJOS
+    ========================= -->
+    <div class="apartado-productos" id="conejos-comida">
+        <button class="cerrar-apartado" onclick="cerrarCategoria('conejos-comida')">← Volver</button>
+        <h3>Comida para Hamsters</h3>
+        <div class="galeria-productos">
+            <div class="tarjeta-imagen"><img src="Nueva carpeta/comida de hamster.jpeg" alt="Comida para conejos 1"></div>
+            <div class="tarjeta-imagen"><img src="img/conejos-comida-2.jpeg" alt="Comida para conejos 2"></div>
+            <div class="tarjeta-imagen"><img src="img/conejos-comida-3.jpeg" alt="Comida para conejos 3"></div>
+            <div class="tarjeta-imagen"><img src="img/conejos-comida-4.jpeg" alt="Comida para conejos 4"></div>
+            <div class="tarjeta-imagen"><img src="img/conejos-comida-5.jpeg" alt="Comida para conejos 5"></div>
+            <div class="tarjeta-imagen"><img src="img/conejos-comida-6.jpeg" alt="Comida para conejos 6"></div>
+        </div>
+    </div>
+
+    <div class="apartado-productos" id="conejos-juguetes">
+        <button class="cerrar-apartado" onclick="cerrarCategoria('conejos-juguetes')">← Volver</button>
+        <h3>Juguetes para Hamsters</h3>
+        <div class="galeria-productos">
+            <div class="tarjeta-imagen"><img src="img/conejos-juguetes-1.jpeg" alt="Juguete para conejos 1"></div>
+            <div class="tarjeta-imagen"><img src="img/conejos-juguetes-2.jpeg" alt="Juguete para conejos 2"></div>
+            <div class="tarjeta-imagen"><img src="img/conejos-juguetes-3.jpeg" alt="Juguete para conejos 3"></div>
+            <div class="tarjeta-imagen"><img src="img/conejos-juguetes-4.jpeg" alt="Juguete para conejos 4"></div>
+            <div class="tarjeta-imagen"><img src="img/conejos-juguetes-5.jpeg" alt="Juguete para conejos 5"></div>
+            <div class="tarjeta-imagen"><img src="img/conejos-juguetes-6.jpeg" alt="Juguete para conejos 6"></div>
+        </div>
+    </div>
+
+    <div class="apartado-productos" id="conejos-accesorios">
+        <button class="cerrar-apartado" onclick="cerrarCategoria('conejos-accesorios')">← Volver</button>
+        <h3>Accesorios para Hamsters</h3>
+        <div class="galeria-productos">
+            <div class="tarjeta-imagen"><img src="Nueva carpeta/ropa de hamster 1.png" alt="Accesorio para conejos 1"></div>
+            <div class="tarjeta-imagen"><img src="Nueva carpeta/Bola de Hamster.png" alt="Accesorio para conejos 2"></div>
+            <div class="tarjeta-imagen"><img src="img/conejos-accesorios-3.jpeg" alt="Accesorio para conejos 3"></div>
+            <div class="tarjeta-imagen"><img src="img/conejos-accesorios-4.jpeg" alt="Accesorio para conejos 4"></div>
+            <div class="tarjeta-imagen"><img src="img/conejos-accesorios-5.jpeg" alt="Accesorio para conejos 5"></div>
+            <div class="tarjeta-imagen"><img src="img/conejos-accesorios-6.jpeg" alt="Accesorio para conejos 6"></div>
+        </div>
+    </div>
+
+    <!-- =========================
+         PERIQUITOS
+    ========================= -->
+    <div class="apartado-productos" id="periquitos-comida">
+        <button class="cerrar-apartado" onclick="cerrarCategoria('periquitos-comida')">← Volver</button>
+        <h3>Comida para periquitos</h3>
+        <div class="galeria-productos">
+            <div class="tarjeta-imagen"><img src="img/periquitos-comida-1.jpeg" alt="Comida para periquitos 1"></div>
+            <div class="tarjeta-imagen"><img src="img/periquitos-comida-2.jpeg" alt="Comida para periquitos 2"></div>
+            <div class="tarjeta-imagen"><img src="img/periquitos-comida-3.jpeg" alt="Comida para periquitos 3"></div>
+            <div class="tarjeta-imagen"><img src="img/periquitos-comida-4.jpeg" alt="Comida para periquitos 4"></div>
+            <div class="tarjeta-imagen"><img src="img/periquitos-comida-5.jpeg" alt="Comida para periquitos 5"></div>
+            <div class="tarjeta-imagen"><img src="img/periquitos-comida-6.jpeg" alt="Comida para periquitos 6"></div>
+        </div>
+    </div>
+
+    <div class="apartado-productos" id="periquitos-juguetes">
+        <button class="cerrar-apartado" onclick="cerrarCategoria('periquitos-juguetes')">← Volver</button>
+        <h3>Juguetes para periquitos</h3>
+        <div class="galeria-productos">
+            <div class="tarjeta-imagen"><img src="img/periquitos-juguetes-1.jpeg" alt="Juguete para periquitos 1"></div>
+            <div class="tarjeta-imagen"><img src="img/periquitos-juguetes-2.jpeg" alt="Juguete para periquitos 2"></div>
+            <div class="tarjeta-imagen"><img src="img/periquitos-juguetes-3.jpeg" alt="Juguete para periquitos 3"></div>
+            <div class="tarjeta-imagen"><img src="img/periquitos-juguetes-4.jpeg" alt="Juguete para periquitos 4"></div>
+            <div class="tarjeta-imagen"><img src="img/periquitos-juguetes-5.jpeg" alt="Juguete para periquitos 5"></div>
+            <div class="tarjeta-imagen"><img src="img/periquitos-juguetes-6.jpeg" alt="Juguete para periquitos 6"></div>
+        </div>
+    </div>
+
+    <div class="apartado-productos" id="periquitos-accesorios">
+        <button class="cerrar-apartado" onclick="cerrarCategoria('periquitos-accesorios')">← Volver</button>
+        <h3>Accesorios para periquitos</h3>
+        <div class="galeria-productos">
+            <div class="tarjeta-imagen"><img src="img/periquitos-accesorios-1.jpeg" alt="Accesorio para periquitos 1"></div>
+            <div class="tarjeta-imagen"><img src="img/periquitos-accesorios-2.jpeg" alt="Accesorio para periquitos 2"></div>
+            <div class="tarjeta-imagen"><img src="img/periquitos-accesorios-3.jpeg" alt="Accesorio para periquitos 3"></div>
+            <div class="tarjeta-imagen"><img src="img/periquitos-accesorios-4.jpeg" alt="Accesorio para periquitos 4"></div>
+            <div class="tarjeta-imagen"><img src="img/periquitos-accesorios-5.jpeg" alt="Accesorio para periquitos 5"></div>
+            <div class="tarjeta-imagen"><img src="img/periquitos-accesorios-6.jpeg" alt="Accesorio para periquitos 6"></div>
+        </div>
+    </div>
+
+</div>
+
+        </section>
+
+
+
+        <!-- =========================
+             SERVICIOS
+        ========================= -->
+
+        <section class="services" id="servicios">
+
+            <div class="services-content">
+
+                <p class="eyebrow">
+                    STAILS COSMO
+                </p>
+
+
+                <h2>
+                    Más que una tienda,
+                    <br>
+
+                    <em>somos parte de su cuidado.</em>
+                </h2>
+
+
+                <p>
+                    Queremos ayudarte a encontrar todo lo necesario
+                    para que tu mascota tenga una vida feliz,
+                    saludable y llena de cariño.
+                </p>
+
+
+                <a href="#contacto" class="dark-button">
+                    Conocer más ↗
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             NOSOTROS
+        ========================= -->
+
+        <section class="about" id="nosotros">
+
+
+            <div class="about-image">
+
+                <img
+                    src="Nueva carpeta/cat.JPG"
+                    alt="Stails Cosmo"
+                >
+
+            </div>
+
+
+
+            <div class="about-content">
+
+                <p class="eyebrow">
+                    CONÓCENOS
+                </p>
+
+
+                <h2>
+                    Cuidamos a quienes
+                    <br>
+
+                    <em>forman parte de tu familia.</em>
+                </h2>
+
+
+                <p>
+                    En Stails Cosmo queremos transmitir nuestro
+                    amor por las mascotas, ofreciendo productos
+                    que reflejen cariño, confianza y diversión.
+                </p>
+
+
+            <button class="text-button" id="btnHistoria">
+    Conoce nuestra historia →
+</button>
+
+            </div>
+
+        </section>
+<!-- =========================
+     HISTORIA DE STAILS COSMO
+========================= -->
+
+<div class="historia-apartado" id="historia">
+
+    <button class="cerrar-historia" id="cerrarHistoria">
+        ← Volver
+    </button>
+
+    <p class="eyebrow">
+        STAILS COSMO
+    </p>
+
+    <h2>
+        Nuestra
+        <em>historia.</em>
+    </h2>
+
+    <div class="historia-contenido">
+
+        <div class="historia-imagen">
+            <img
+                src="Nueva carpeta/cat.JPG"
+                alt="Historia de Stails Cosmo"
+            >
+        </div>
+
+        <div class="historia-texto">
+
+            <h3>
+                El comienzo de Stails Cosmo
+            </h3>
+
+            <p>
+                🐾 Historia de COSMO TAILS
+COSMO TAILS nació de la pasión por las mascotas y de la necesidad de encontrar en un solo lugar productos para ellas y sus dueños. La idea surgió al notar que muchos accesorios podrían ser más especiales si fueran personalizados.
+
+Así nació COSMO TAILS, una tienda que ofrece alimentos, accesorios y productos para mascotas, además de artículos personalizados para sus dueños. Su objetivo es celebrar el vínculo especial entre cada mascota y su familia.
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+        <!-- =========================
+             CONTACTO
+        ========================= -->
+
+        <section class="contact" id="contacto">
+
+            <p class="eyebrow">
+                STAILS COSMO
+            </p>
+
+
+            <h2>
+                ¿Hablamos?
+            </h2>
+
+
+            <p>
+                Estamos aquí para ayudarte a encontrar lo mejor
+                para tu mascota.
+            </p>
+
+
+            <a
+                href="https://api.whatsapp.com/send/?phone=1234567890&text&type=phone_number&app_absent=0"
+                class="contact-button"
+            >
+                Contactar ahora ↗
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            Stails<span>Cosmo</span>
+        </div>
+
+
+        <p>
+            © 2026 Stails Cosmo
+        </p>
+
+
+        <div class="social">
+            Instagram
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================= -->
+
+    <script>
+
+        // Seleccionamos todas las tarjetas
+        const tarjetas =
+            document.querySelectorAll(".product-card");
+
+
+        // Recorremos cada tarjeta
+        tarjetas.forEach(function(tarjeta) {
+
+
+            // Seleccionamos el botón de cerrar
+            const botonCerrar =
+                tarjeta.querySelector(".cerrar-menu");
+
+
+            // Al tocar la tarjeta
+            tarjeta.addEventListener(
+                "click",
+                function(evento) {
+
+
+                    // Si se toca el menú o una opción,
+                    // no hace nada adicional
+                    if (
+                        evento.target.closest(".menu-mascota")
+                    ) {
+                        return;
+                    }
+
+
+                    // Evita que el enlace vaya a #
+                    evento.preventDefault();
+
+
+                    // Cierra todas las tarjetas
+                    tarjetas.forEach(
+                        function(otraTarjeta) {
+
+                            otraTarjeta.classList.remove(
+                                "abierto"
+                            );
+
+                        }
+                    );
+
+
+                    // Abre la tarjeta seleccionada
+                    tarjeta.classList.add(
+                        "abierto"
+                    );
+
+                }
+            );
+
+
+            // Botón para cerrar
+            botonCerrar.addEventListener(
+                "click",
+                function(evento) {
+
+                    evento.stopPropagation();
+
+
+                    tarjeta.classList.remove(
+                        "abierto"
+                    );
+
+                }
+            );
+
+        });
+
+    </script>
+    <!-- PRODUCTOS PERSONALIZADOS FUNCIONAL -->
+
+<script>
+
+    const productosPersonalizados =
+        document.querySelector(
+            ".productos-personalizados"
+        );
+
+
+    const botonPersonalizados =
+        document.querySelector(
+            ".btn-productos-personalizados"
+        );
+
+
+    const cerrarPersonalizados =
+        document.querySelector(
+            ".cerrar-personalizados"
+        );
+
+
+    /* ABRIR */
+
+    botonPersonalizados.addEventListener(
+        "click",
+        function() {
+
+            productosPersonalizados.classList.add(
+                "abierto-personalizados"
+            );
+
+        }
+    );
+
+
+    /* CERRAR */
+
+    cerrarPersonalizados.addEventListener(
+        "click",
+        function() {
+
+            productosPersonalizados.classList.remove(
+                "abierto-personalizados"
+            );
+
+        }
+    );
+    function mostrarCategoria(id) {
+
+    document.querySelectorAll(".apartado-productos")
+        .forEach(function(apartado) {
+            apartado.classList.remove("mostrar");
+        });
+
+    document.getElementById(id)
+        .classList.add("mostrar");
+}
+
+</script>
+
+
+
+<script>
+/* =========================================
+   CATEGORÍAS DE PRODUCTOS POR IMAGEN
+   AGREGADO - NO MODIFICA LOS SCRIPTS ORIGINALES
+========================================= */
+
+function mostrarCategoria(id) {
+    document.querySelectorAll(".apartado-productos").forEach(function(apartado) {
+        apartado.classList.remove("mostrar");
+    });
+
+    var categoria = document.getElementById(id);
+
+    if (categoria) {
+        categoria.classList.add("mostrar");
+        categoria.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    }
+}
+
+function cerrarCategoria(id) {
+    var categoria = document.getElementById(id);
+
+    if (categoria) {
+        categoria.classList.remove("mostrar");
+    }
+}
+</script>
+<script>
+
+    const btnHistoria = document.getElementById("btnHistoria");
+    const historia = document.getElementById("historia");
+    const cerrarHistoria = document.getElementById("cerrarHistoria");
+
+    btnHistoria.addEventListener("click", function() {
+
+        historia.classList.add("mostrar");
+
+        historia.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
+    });
+
+    cerrarHistoria.addEventListener("click", function() {
+
+        historia.classList.remove("mostrar");
+
+    });
+
+</script>
+</body>
+
+</html>
