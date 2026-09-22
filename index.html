@@ -950,18 +950,8 @@
         </div>
     </div>
 
-    <div class="apartado-productos" id="periquitos-juguetes">
-        <button class="cerrar-apartado" onclick="cerrarCategoria('periquitos-juguetes')">← Volver</button>
-        <h3>Juguetes para periquitos</h3>
-        <div class="galeria-productos">
-            <div class="tarjeta-imagen"><img src="img/periquitos-juguetes-1.jpeg" alt="Juguete para periquitos 1"></div>
-            <div class="tarjeta-imagen"><img src="img/periquitos-juguetes-2.jpeg" alt="Juguete para periquitos 2"></div>
-            <div class="tarjeta-imagen"><img src="img/periquitos-juguetes-3.jpeg" alt="Juguete para periquitos 3"></div>
-            <div class="tarjeta-imagen"><img src="img/periquitos-juguetes-4.jpeg" alt="Juguete para periquitos 4"></div>
-            <div class="tarjeta-imagen"><img src="img/periquitos-juguetes-5.jpeg" alt="Juguete para periquitos 5"></div>
-            <div class="tarjeta-imagen"><img src="img/periquitos-juguetes-6.jpeg" alt="Juguete para periquitos 6"></div>
-        </div>
-    </div>
+
+
 
     <div class="apartado-productos" id="periquitos-accesorios">
         <button class="cerrar-apartado" onclick="cerrarCategoria('periquitos-accesorios')">← Volver</button>
@@ -1344,9 +1334,33 @@ function cerrarCategoria(id) {
     if (categoria) {
         categoria.classList.remove("mostrar");
     }
+    
 }
 </script>
+<script>
 
+    const btnHistoria = document.getElementById("btnHistoria");
+    const historia = document.getElementById("historia");
+    const cerrarHistoria = document.getElementById("cerrarHistoria");
+
+    btnHistoria.addEventListener("click", function() {
+
+        historia.classList.add("mostrar");
+
+        historia.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
+    });
+
+    cerrarHistoria.addEventListener("click", function() {
+
+        historia.classList.remove("mostrar");
+
+    });
+
+</script>
 </body>
 
 </html>
