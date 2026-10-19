@@ -1484,3 +1484,52 @@ footer p {
     line-height: 1.8;
     margin-bottom: 20px;
 }
+
+.compra-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(20, 15, 25, 0.7);
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.compra-modal.compra-visible {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.compra-panel {
+  background: white;
+  color: #302438;
+  padding: 28px;
+  border-radius: 18px;
+  width: 100%;
+  max-width: 460px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.compra-panel input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font: inherit;
+}
+
+.compra-panel button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #c9a6df;
+  color: #302438;
+  font-weight: bold;
+}
+
+.tarjeta-imagen {
+  cursor: pointer;
+}

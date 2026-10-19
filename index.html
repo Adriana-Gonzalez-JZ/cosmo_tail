@@ -819,8 +819,8 @@
             <div class="tarjeta-imagen"><img src="Nueva carpeta/barra nutritiva morada.jpg" alt="Comida para perros 2"></div>
             <div class="tarjeta-imagen"><img src="Nueva carpeta/caja de comida para perross.jpg.jpeg" alt="Comida para perros 3"></div>
             <div class="tarjeta-imagen"><img src="Nueva carpeta/dental.png" alt="Comida para perros 4"></div>
-            <div class="tarjeta-imagen"><img src="img/perros-comida-5.jpeg" alt="Comida para perros 5"></div>
-            <div class="tarjeta-imagen"><img src="img/perros-comida-6.jpeg" alt="Comida para perros 6"></div>
+            <div class="tarjeta-imagen"><img src="Nueva carpeta/image (4).png" alt="Comida para perros 5"></div>
+            <div class="tarjeta-imagen"><img src="Nueva carpeta/image (5).png" alt="Comida para perros 6"></div>
         </div>
     </div>
 
@@ -860,9 +860,9 @@
             <div class="tarjeta-imagen"><img src="Nueva carpeta/CROQUETAS.jpeg" alt="Comida para gatos 1"></div>
             <div class="tarjeta-imagen"><img src="Nueva carpeta/dental.png" alt="Comida para gatos 2"></div>
             <div class="tarjeta-imagen"><img src="Nueva carpeta/atún.png" alt="Comida para gatos 3"></div>
-            <div class="tarjeta-imagen"><img src="" alt="Comida para gatos 4"></div>
-            <div class="tarjeta-imagen"><img src="img/gatos-comida-5.jpeg" alt="Comida para gatos 5"></div>
-            <div class="tarjeta-imagen"><img src="img/gatos-comida-6.jpeg" alt="Comida para gatos 6"></div>
+            <div class="tarjeta-imagen"><img src="Nueva carpeta/para el gato2.jpg.jpeg" alt="Comida para gatos 4"></div>
+            <div class="tarjeta-imagen"><img src="Nueva carpeta/comida de gato2.jpg.jpeg" alt="Comida para gatos 5"></div>
+            <div class="tarjeta-imagen"><img src="Nueva carpeta/comida de gato3.jpg.jpeg" alt="Comida para gatos 6"></div>
         </div>
     </div>
 
@@ -875,7 +875,7 @@
             <div class="tarjeta-imagen"><img src="Nueva carpeta/pecao´.jpeg" alt="Juguete para gatos 3"></div>
             <div class="tarjeta-imagen"><img src="Nueva carpeta/pollo.jpeg" alt="Juguete para gatos 4"></div>
             <div class="tarjeta-imagen"><img src="Nueva carpeta/jud.jpeg" alt="Juguete para gatos 5"></div>
-            <div class="tarjeta-imagen"><img src="img/gatos-juguetes-6.jpeg" alt="Juguete para gatos 6"></div>
+            <div class="tarjeta-imagen"><img src="Nueva carpeta/GATITO.jpeg" alt="Juguete para gatos 6"></div>
         </div>
     </div>
 
@@ -928,9 +928,9 @@
             <div class="tarjeta-imagen"><img src="Nueva carpeta/ropa de hamster 1.png" alt="Accesorio para conejos 1"></div>
             <div class="tarjeta-imagen"><img src="Nueva carpeta/Bola de Hamster.png" alt="Accesorio para conejos 2"></div>
             <div class="tarjeta-imagen"><img src="Nueva carpeta/monte.png" alt=""></div>
-            <div class="tarjeta-imagen"><img src="img/conejos-accesorios-4.jpeg" alt="Accesorio para conejos 4"></div>
-            <div class="tarjeta-imagen"><img src="img/conejos-accesorios-5.jpeg" alt="Accesorio para conejos 5"></div>
-            <div class="tarjeta-imagen"><img src="img/conejos-accesorios-6.jpeg" alt="Accesorio para conejos 6"></div>
+            <div class="tarjeta-imagen"><img src="Nueva carpeta/CASITA.jpeg" alt="Accesorio para conejos 4"></div>
+            <div class="tarjeta-imagen"><img src="Nueva carpeta/MOTOS run run.jpeg" alt="Accesorio para conejos 5"></div>
+            <div class="tarjeta-imagen"><img src="Nueva carpeta/silla.jpeg" alt="Accesorio para conejos 6"></div>
         </div>
     </div>
 
@@ -943,8 +943,8 @@
         <div class="galeria-productos">
             <div class="tarjeta-imagen"><img src="Nueva carpeta/bolsita para ave.png" alt="Comida para periquitos 1"></div>
             <div class="tarjeta-imagen"><img src="Nueva carpeta/cmida de peric.jpeg" alt="Comida para periquitos 2"></div>
-            <div class="tarjeta-imagen"><img src="img/periquitos-comida-3.jpeg" alt="Comida para periquitos 3"></div>
-            <div class="tarjeta-imagen"><img src="img/periquitos-comida-4.jpeg" alt="Comida para periquitos 4"></div>
+            <div class="tarjeta-imagen"><img src="Nueva carpeta/image (3).png" alt="Comida para periquitos 3"></div>
+            <div class="tarjeta-imagen"><img src="Nueva carpeta/image (6).png" alt="Comida para periquitos 4"></div>
             <div class="tarjeta-imagen"><img src="img/periquitos-comida-5.jpeg" alt="Comida para periquitos 5"></div>
             <div class="tarjeta-imagen"><img src="img/periquitos-comida-6.jpeg" alt="Comida para periquitos 6"></div>
         </div>
@@ -1361,6 +1361,84 @@ function cerrarCategoria(id) {
     });
 
 </script>
+
+<!-- APARTADO DE COMPRA -->
+<section id="compra" class="compra-modal">
+  <div class="compra-panel">
+    <button type="button" id="cerrarCompra">✕</button>
+
+    <h2>Finalizar compra</h2>
+
+    <img id="imagenCompra" src="" alt="Producto seleccionado"
+         style="width:120px;height:120px;object-fit:cover">
+
+    <h3 id="nombreCompra">Producto</h3>
+
+    <label for="precio">Precio por unidad ($)</label>
+    <input id="precio" type="number" min="0.01"
+           step="0.01" value="5.00">
+
+    <label for="cantidad">Cantidad deseada</label>
+    <input id="cantidad" type="number" min="1"
+           step="1" value="1">
+
+    <h3>Total: $<span id="total">5.00</span></h3>
+
+    <p>Para pagar, continúa a una plataforma
+       de pago segura.</p>
+
+    <button type="button" id="continuarCompra">
+      Continuar con el pedido
+    </button>
+
+    <p id="mensaje"></p>
+  </div>
+</section>
+
+<script>
+const modal = document.getElementById("compra");
+const imagen = document.getElementById("imagenCompra");
+const nombre = document.getElementById("nombreCompra");
+const precio = document.getElementById("precio");
+const cantidad = document.getElementById("cantidad");
+const total = document.getElementById("total");
+const mensaje = document.getElementById("mensaje");
+
+document.querySelectorAll(".tarjeta-imagen").forEach(tarjeta => {
+  tarjeta.addEventListener("click", () => {
+    const foto = tarjeta.querySelector("img");
+    if (!foto) return;
+
+    imagen.src = foto.src;
+    nombre.textContent = foto.alt || "Producto CosmoTail";
+    precio.value = "5.00";
+    cantidad.value = "1";
+    mensaje.textContent = "";
+    modal.classList.add("compra-visible");
+    actualizarTotal();
+  });
+});
+
+function actualizarTotal() {
+  const p = Math.max(0, Number(precio.value) || 0);
+  const c = Math.max(1, Math.floor(Number(cantidad.value) || 1));
+  cantidad.value = c;
+  total.textContent = (p * c).toFixed(2);
+}
+
+precio.addEventListener("input", actualizarTotal);
+cantidad.addEventListener("input", actualizarTotal);
+
+document.getElementById("cerrarCompra").onclick = () => {
+  modal.classList.remove("compra-visible");
+};
+
+document.getElementById("continuarCompra").onclick = () => {
+  mensaje.textContent =
+    "Pedido de demostración. Aún no se ha realizado ningún pago.";
+};
+</script>
+
 </body>
 
 </html>       
