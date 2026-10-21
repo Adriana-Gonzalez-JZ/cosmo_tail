@@ -1548,21 +1548,81 @@ body {
 .header {
     background: #FFD6E7;
 }
-.compra-top{display:flex;justify-content:space-between;align-items:center}
-.compra-steps{display:flex;gap:8px;align-items:center}
-.step{font-size:11px;font-weight:700;padding:6px 10px;border-radius:20px;background:#f3e5f7;color:#9a7aa3}
-.step.active{background:#c01fd6;color:white}
-.resumen-producto{display:flex;gap:14px;align-items:center;background:#fdf5ff;border:1px solid #f0d9f5;padding:12px;border-radius:14px}
-.resumen-producto img{width:74px!important;height:74px!important;border-radius:10px}
-.cantidad-box{display:flex;border:1px solid #e8d9ee;border-radius:12px;overflow:hidden}
-.cantidad-box button{width:44px;height:44px;border:none;background:white;cursor:pointer;font-weight:700}
-.cantidad-box input{border:none;text-align:center}
-.total-box{display:flex;justify-content:space-between;background:#2c2730;color:white;padding:14px 16px;border-radius:12px;margin-top:6px}
-.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.form-seccion{font-family:"Playfair Display",serif;font-size:16px;margin:18px 0 8px}
-.pago-seguro-box{background:#f0fdf4;border:1px solid #bbf7d0;color:#166534;font-size:11px;padding:10px;border-radius:10px;text-align:center;margin:14px 0}
-.mensaje-pago{padding:10px;border-radius:10px;margin-top:10px;display:none;font-size:13px}
-.mensaje-pago.error{display:block;background:#fef2f2;border:1px solid #fecaca;color:#991b1b}
-.mensaje-pago.exito{display:block;background:#f0fdf4;border:1px solid #bbf7d0;color:#14532d}
-.btn-principal{width:100%;padding:14px;border:none;border-radius:14px;background:linear-gradient(135deg,#c01fd6,#a66cdb);color:white;font-weight:700;cursor:pointer;margin-top:8px}
-.btn-volver{background:none;border:1px solid #e8d9ee;padding:8px 12px;border-radius:20px;font-size:12px;cursor:pointer}
+.compra-top
+{
+    display:flex;justify-content:space-between;align-items:center
+}
+
+.compra-steps{
+    display:flex;gap:8px;align-items:center
+}
+
+.step{
+    font-size:11px;font-weight:700;padding:6px 10px;border-radius:20px;background:#f3e5f7;color:#9a7aa3
+}
+
+.step.active{
+    background:#c01fd6;color:white
+}
+
+.resumen-producto{
+    display:flex;gap:14px;align-items:center;background:#fdf5ff;border:1px solid #f0d9f5;padding:12px;border-radius:14px
+}
+
+.resumen-producto img{
+    width:74px!important;height:74px!important;border-radius:10px
+}
+
+.cantidad-box{
+    display:flex;border:1px solid #e8d9ee;border-radius:12px;overflow:hidden
+}
+
+.cantidad-box button{
+    width:44px;height:44px;border:none;background:white;cursor:pointer;font-weight:700
+}
+
+.cantidad-box input{
+    border:none;text-align:center
+}
+
+.total-box{
+    display:flex;justify-content:space-between;background:#2c2730;color:white;padding:14px 16px;border-radius:12px;margin-top:6px
+}
+
+.grid-2{
+    display:grid;grid-template-columns:1fr 1fr;gap:10px
+}
+
+.form-seccion{
+    font-family:"Playfair Display",serif;font-size:16px;margin:18px 0 8px
+}
+
+.pago-seguro-box{
+    background:#f0fdf4;border:1px solid #bbf7d0;color:#166534;font-size:11px;padding:10px;border-radius:10px;text-align:center;margin:14px 0
+}
+
+.mensaje-pago{
+    padding:10px;border-radius:10px;margin-top:10px;display:none;font-size:13px
+}
+
+.mensaje-pago.error{
+    display:block;background:#fef2f2;border:1px solid #fecaca;color:#991b1b
+}
+
+.mensaje-pago.exito{
+    display:block;background:#f0fdf4;border:1px solid #bbf7d0;color:#14532d
+}
+
+.btn-principal{
+    width:100%;padding:14px;border:none;border-radius:14px;background:linear-gradient(135deg,#c01fd6,#a66cdb);color:white;font-weight:700;cursor:pointer;margin-top:8px
+}
+
+.btn-volver{
+    background:none;border:1px solid #e8d9ee;padding:8px 12px;border-radius:20px;font-size:12px;cursor:pointer
+}
+body {
+    background-color: #fffdf8;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Cg fill='%23c9b6f2' fill-opacity='0.45' transform='rotate(-25 45 45)'%3E%3Cellipse cx='45' cy='53' rx='10' ry='8'/%3E%3Cellipse cx='32' cy='38' rx='5' ry='7' transform='rotate(-25 32 38)'/%3E%3Cellipse cx='43' cy='32' rx='5' ry='7' transform='rotate(-8 43 32)'/%3E%3Cellipse cx='54' cy='34' rx='5' ry='7' transform='rotate(12 54 34)'/%3E%3Cellipse cx='63' cy='42' rx='5' ry='7' transform='rotate(30 63 42)'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 90px 90px;
+}
