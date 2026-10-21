@@ -1533,3 +1533,18 @@ footer p {
 .tarjeta-imagen {
   cursor: pointer;
 }
+:root {
+    --rosa-pastel: #FFD6E7;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background: #FFD6E7;
+    background-color: #FFD6E7;
+    color: #27232c;
+    overflow-x: hidden;
+}
+
+.header {
+    background: #FFD6E7;
+}
